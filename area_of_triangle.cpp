@@ -8,10 +8,7 @@ int main(){
     cin>>b;
     cout<<"insert your height";
     cin>>h;
-
     area = (b*h)/2;
-
     cout<< area;
-
     return 0;
 }
