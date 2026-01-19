@@ -21,10 +21,21 @@ else{
 }
 }}
 
+int pow(int x , int y){
+    int z ;
+    z = 1;
+    for(int i = 0 ; i < y ;i++){
+        z*=x;
+          }
+    
+    return z;
+}
+
 int main()
 {
     cout<<add(10,5);
     cout<<Max(7,10,5);
+    cout<<pow(2,5);
 
     return 0;
 }
