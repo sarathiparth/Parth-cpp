@@ -7,10 +7,18 @@ class rect{
     int l ;
     public:
     void getL(int x){
-        l = x;
+        if(x<0){
+            l = 1;
+        }
+        else{
+        l = x;}
     }
     void getB(int y){
-        b = y;
+       if(y<0){
+            b = 1;
+        }
+        else{
+         b= y;}
     }
     int dl(){
         return l;
