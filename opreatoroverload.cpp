@@ -1,36 +1,38 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-class Complex {
-private:
+class complex{
+    private:
     int real;
     int img;
 
-public:
-    Complex(int r = 0, int i = 0) {
+    public:
+    complex(int r = 0 , int i = 0 ){
         real = r;
         img = i;
     }
 
-    Complex add(const Complex& x) {
-        Complex temp;
+    complex add(complex x){
+        complex temp ;
         temp.real = real + x.real;
         temp.img = img + x.img;
         return temp;
     }
-
-    void display() {
-        cout << real << " + " << img << "i" << endl;
-    }
+    void display(){
+    cout<<real<<"+i"<<img;
+}
 };
 
-int main() {
-    Complex c1(8, 3);
-    Complex c2(8, 4);
-    Complex c3;
+int main(){
+    complex c(1,2);
+    complex m(3,5);
+    complex z;
 
-    c3 = c1.add(c2);
+    z = c.add(m);
 
-    c3.display();
+    z.display();
+
     return 0;
+    
+
 }
