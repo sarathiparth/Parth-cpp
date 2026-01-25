@@ -25,7 +25,7 @@ public:
 };
 
 int main() {
-    Complex c1(7, 3);
+    Complex c1(8, 3);
     Complex c2(8, 4);
     Complex c3;
 
