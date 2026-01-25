@@ -18,6 +18,13 @@ class complex{
         temp.img = img + x.img;
         return temp;
     }
+
+    complex operator -(complex x){
+        complex temp ;
+        temp.real = real + x.real;
+        temp.img = img + x.img;
+        return temp;
+    }
     void display(){
     cout<<real<<"+i"<<img;
 }
@@ -28,6 +35,7 @@ int main(){
     complex m(3,5);
     complex z;
 
+    z = c-m;
     z = c.add(m);
 
     z.display();
