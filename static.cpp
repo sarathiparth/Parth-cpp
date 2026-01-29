@@ -13,11 +13,16 @@ class test{
         b = 20;
         count++;
     }
+
+    static int getcount(){
+        return count;
+    }
 };int test::count = 0;
 
 
 
 int main(){
+    cout<<test::getcount();
     cout<<test::count;
     return 0;
 
