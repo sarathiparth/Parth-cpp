@@ -16,5 +16,7 @@ int main(){
         cout<<"division by zero"<<m;
     }
 
+    cout<<"bye";
+
     return 0;
 }
